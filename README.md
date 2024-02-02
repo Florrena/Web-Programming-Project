@@ -1,4 +1,4 @@
-# Project Name - Team Number
+# Silicate Adoption Company - Team 1
 
 A brief description of your web development project.
 
