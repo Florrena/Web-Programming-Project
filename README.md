@@ -10,15 +10,9 @@ We created a cat adoption website, where u can adopt a cute cat and buy some del
 
 ---
 
-basket/shop + tables inStock/bought products + customers
-give up cat for adoption page
-log in/sign in page +adding members to the database
-
-tables for adoption and inquery
-9.contact form + table for info and customers
-form for ppl who adopt a cat + table for adopted and not adopted cats
 
 ## In this week we're focusing on these:
+
 1. basket icon/shop(payment page) + tables inStock/bought products + customers //Viktor
 
 2.log in/sign in page +adding members to the database //Ania
@@ -26,7 +20,7 @@ give up cat for adoption page //Ania
 
 3.contact form + table for info and customers //Janika
 
-4.form for ppl who adopt a car + table for adopted and not adopted cars //Sahil
+4.form for ppl who adopt a cat + table for adopted and not adopted cats //Sahil
 
 ## Features
 
