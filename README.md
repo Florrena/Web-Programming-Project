@@ -1,6 +1,6 @@
 # Silicate Adoption Company - Team 1
 
-A brief description of your web development project.
+We created a cat adoption website, where u can adopt a cute cat and buy some delicious products for him.
 
 ## Table of Contents
 - [Features](#features)
