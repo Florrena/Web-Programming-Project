@@ -1,6 +1,6 @@
 # Silicate Adoption Company - Team 1
 
-We created a cat adoption website, where u can adopt a cute cat and buy some delicious products for him.
+We created a cat adoption website, where you can adopt cute cats, put a cat up for adoption and buy some delicious products for your feline friend.
 
 ## Table of Contents
 - [Features](#features)
@@ -13,14 +13,14 @@ We created a cat adoption website, where u can adopt a cute cat and buy some del
 
 ## In this week we're focusing on these:
 
-1. basket icon/shop(payment page) + tables inStock/bought products + customers //Viktor
+1. Basket icon/shop(payment page) + Tables inStock/purchased products + customers //Viktor
 
-2.log in/sign in page +adding members to the database //Ania
-give up cat for adoption page //Ania
+2. Login/sign in page + Adding members to the database //Ania
+   Give up cat for adoption page //Ania
 
-3.contact form + table for info and customers //Janika
+3. Contact form + Table for info and customers //Janika
 
-4.form for ppl who adopt a cat + table for adopted and not adopted cats //Sahil
+4. Form for people who adopt a cat + Table for adopted and not adopted cats //Walid
 
 ## Features
 
@@ -43,7 +43,7 @@ We will make the basket button that takes you to the shopping cart and payment p
 
 ### Feature 2 
 
-We will create log in/sign in page for customers, once they sign in they'll be added to the systems database.
+We will create login/sign in page for customers, once they sign in they'll be added to the systems database.
 
 ### Feature 3
 
@@ -51,11 +51,11 @@ We will create the page which alows customers to give up their cat for adoption.
 
 ### Feature 4
 
-We will create the contact form. which allows the customers to ask questions/give feedback or suggestions to the company. The customers as well as information they provided will be added to the database.
+We will create the contact form, which allows the customers to ask questions/give feedback or suggestions to the company. The customers as well as information they provided will be added to the database.
 
 ### Feature 5
 
-We will create adoption form for adoption your dream cat. Once the customer fills up the form, the cat will be moved to "Adopted" table in the database.
+We will create adoption form for adopting your dream cat. Once the customer fills up the form, the cat will be moved to "Adopted" table in the database.
 
 ### Feature 6  
 
@@ -67,11 +67,11 @@ We will make the search button interactive and working, and also make it slide o
 
 ### Feature 8
 
-We will make a slide out menu in our header. The concept is to make it look more mobile-user friendly.
+We will make a slide out menu in our header. The concept is to make it look more mobile user-friendly.
 
 ### Feature 9
 
-We will make the 'random cat button' generate a random cat page every time a customer clicks on it, making it perfect if the customer has any troubles deciding on which cat to choose.
+We will make the 'random cat button' generate a random cat page every time a customer clicks on it, making it easier for the customer if they have any trouble deciding on which cat to choose.
 
 ---
 
@@ -80,9 +80,9 @@ We will make the 'random cat button' generate a random cat page every time a cus
 List the database tables that are part of your project. 
 
 - Table 1 (Ania): Customer table
-- Table 2 (Walid): Cat table Adopted/ Available
-- Table 3 (Walid): tables for adoption and inquery
-- Table 4 (Viktor): Products InStock/ Bought
+- Table 2 (Walid): Cat table Adopted/Available
+- Table 3 (Walid): Tables for adoption and inquery
+- Table 4 (Viktor): Products InStock/Bought
 - Table 5 (Janika): Customer's messages (messages that they provided in the contact form section)
 
 > Include the ER Diagram of the database. 
@@ -93,18 +93,18 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1: (Viktor): Form Name: payment form 
-- Form 2: (Ania): Form Name: log in/sign in form
-- Form 3: (Ania): Form Name: giving cat for adoption form
-- Form 3: (Walid): Form Name: cat adoption form
-- Form 3: (Janika): Form Name: contact form
+- Form 1: (Viktor): Form Name: Payment form 
+- Form 2: (Ania): Form Name: Login/sign in form
+- Form 3: (Ania): Form Name: Putting cat for adoption form
+- Form 3: (Walid): Form Name: Cat adoption form
+- Form 3: (Janika): Form Name: Contact form
 
 
 ---
 
 ## Created Tables
 
-List any tables that you have created in the project work (probably updated later)
+List any tables that you have created in the project work (probably update later)
 
 - Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
