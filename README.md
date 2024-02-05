@@ -79,7 +79,7 @@ We will make the 'random cat button' generate a random cat page every time a cus
 
 List the database tables that are part of your project. 
 
-- Table 1 (Ania): Customer table
+- Table 1 (Ania): Customer/user table
 - Table 2 (Walid): Cat table Adopted/Available
 - Table 3 (Walid): Tables for adoption and inquery
 - Table 4 (Viktor): Products InStock/Bought
