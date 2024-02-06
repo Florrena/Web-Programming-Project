@@ -27,10 +27,10 @@ We created a cat adoption website, where you can adopt cute cats, put a cat up f
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Viktor): basket icon/shop(payment page).
- [✓] Feature 2 (Ania): log in/sign in page
- [✓] Feature 3 (Ania): give up cat for adoption page.
- [✓] Feature 4 (Janika): contact form.
- [✓] Feature 5 (Walid): adoption form.
+- [✓] Feature 2 (Ania): log in/sign in page
+- [✓] Feature 3 (Ania): give up cat for adoption page.
+- [✓] Feature 4 (Janika): contact form.
+- [✓] Feature 5 (Walid): adoption form.
 - [ ] Feature 6 (Not started yet): slide home banners.
 - [ ] Feature 7 (Not started yet): search button.
 - [ ] Feature 8 (Not started yet): slide out menu for mobile/normal page.
@@ -94,10 +94,10 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 - Form 1: (Viktor): Form Name: Payment form 
-[✓] Form 2: (Ania): Form Name: Login/sign in form
-[✓] Form 3: (Ania): Form Name: Putting cat for adoption form
-[✓]  Form 3: (Walid): Form Name: Cat adoption form
-[✓]  Form 3: (Janika): Form Name: Contact form
+-[✓] Form 2: (Ania): Form Name: Login/sign in form
+-[✓] Form 3: (Ania): Form Name: Putting cat for adoption form
+-[✓]  Form 3: (Walid): Form Name: Cat adoption form
+-[✓]  Form 3: (Janika): Form Name: Contact form
 
 
 ---
