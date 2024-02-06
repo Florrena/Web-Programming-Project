@@ -94,10 +94,10 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 - Form 1: (Viktor): Form Name: Payment form 
--[✓] Form 2: (Ania): Form Name: Login/sign in form
--[✓] Form 3: (Ania): Form Name: Putting cat for adoption form
--[✓]  Form 3: (Walid): Form Name: Cat adoption form
--[✓]  Form 3: (Janika): Form Name: Contact form
+- [✓] Form 2: (Ania): Form Name: Login/sign in form
+- [✓] Form 3: (Ania): Form Name: Putting cat for adoption form
+- [✓]  Form 3: (Walid): Form Name: Cat adoption form
+- [✓]  Form 3: (Janika): Form Name: Contact form
 
 
 ---
