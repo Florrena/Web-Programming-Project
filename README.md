@@ -95,9 +95,19 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 1: (Viktor): Form Name: Payment form 
 - [✓] Form 2: (Ania): Form Name: Login/sign in form
 - [✓] Form 3: (Ania): Form Name: Adopt-out form
-- [✓]  Form 3: (Walid): Form Name: Adopt form
-- [✓]  Form 3: (Janika): Form Name: Contact form
+- [✓]  Form 4: (Walid): Form Name: Adopt form
+- [✓]  Form 5: (Janika): Form Name: Contact form
 
+### form 1
+The customers are able to make a purchase.
+### form 2
+The customers are able to sign up and use the other forms in the website
+### form 3
+The customer is able to put his cat for adoption for various reasons.
+### form 4 
+The customer is able to adopt a cat
+### form 5
+the customer is able to ask quesions or give suggestions/opinions to the Silicate Company.
 
 ---
 
