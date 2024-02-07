@@ -34,7 +34,6 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 6 (Not started yet): slide home banners.
 - [ ] Feature 7 (Not started yet): search button.
 - [ ] Feature 8 (Not started yet): slide out menu for mobile/normal page.
-- [ ] Feature 9 (Not started yet): random cat button.
 
 > Add features as required. 
 ### Feature 1
@@ -69,9 +68,7 @@ We will make the search button interactive and working, and also make it slide o
 
 We will make a slide out menu in our header. The concept is to make it look more mobile user-friendly.
 
-### Feature 9
 
-We will make the 'random cat button' generate a random cat page every time a customer clicks on it, making it easier for the customer if they have any trouble deciding on which cat to choose.
 
 ---
 
@@ -79,11 +76,13 @@ We will make the 'random cat button' generate a random cat page every time a cus
 
 List the database tables that are part of your project. 
 
-- Table 1 (Ania): Customer/user table
-- Table 2 (Walid): Cat table Adopted/Available
-- Table 3 (Walid): Tables for adoption and inquery
-- Table 4 (Viktor): Products InStock/Bought
-- Table 5 (Janika): Customer's messages (messages that they provided in the contact form section)
+- Table 1 (Ania): user table
+- Table 2-3 (Ania): Cat table Adopted/Available
+- Table 4 (Ania): Adopt-out-form table
+- Table 5 (Walid): adoption-form table
+- Table 6 (Viktor): Products InStock/Bought
+- Table 7 (Janika): Contact-form table 
+
 
 > Include the ER Diagram of the database. 
 
@@ -95,8 +94,8 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1: (Viktor): Form Name: Payment form 
 - [✓] Form 2: (Ania): Form Name: Login/sign in form
-- [✓] Form 3: (Ania): Form Name: Putting cat for adoption form
-- [✓]  Form 3: (Walid): Form Name: Cat adoption form
+- [✓] Form 3: (Ania): Form Name: Adopt-out form
+- [✓]  Form 3: (Walid): Form Name: Adopt form
 - [✓]  Form 3: (Janika): Form Name: Contact form
 
 
