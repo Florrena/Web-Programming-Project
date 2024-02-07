@@ -16,11 +16,12 @@ We created a cat adoption website, where you can adopt cute cats, put a cat up f
 1. Basket icon/shop(payment page) + Tables inStock/purchased products + customers //Viktor
 
 2. Login/sign in page + Adding members to the database //Ania
-   Give up cat for adoption page //Ania
 
-3. Contact form + Table for info and customers //Janika
+3. Give up cat for adoption page //Ania
 
-4. Form for people who adopt a cat + Table for adopted and not adopted cats //Walid
+4. Contact form + Table for info and customers //Janika
+
+5. Form for people who adopt a cat + Table for adopted and not adopted cats //Walid
 
 ## Features
 
