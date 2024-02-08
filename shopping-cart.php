@@ -27,23 +27,23 @@ include ("header.php");
 
     <div class="adoption-container">
         <div class="center">
-            <form action="#" method="POST" class="adoption-form">
+            <form action="checkout.php" method="get" class="adoption-form">
                 <h4>PAYMENT INFO</h4>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" >
+                    <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" >
+                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" >
+                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required>
                 </div>
                 <div class="input-box">
-                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address, City, ZIP Code" ></textarea>
+                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address, City, ZIP Code" required></textarea>
                 </div>
                 <div class="input-box">
                     <label for="experience">Choose your payment method:</label>
-                    <select id="experience" name="experience" class="input-field" >
+                    <select id="experience" name="experience" class="input-field" required>
                         <option class ="option" value="VISA">VISA</option>
                         <option class ="option" value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
                         <option class ="option" value="MASTERCARD">MASTERCARD</option>
@@ -51,19 +51,19 @@ include ("header.php");
                     </select>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="cname" name="cardname" placeholder="Name on Card" >
+                    <input type="text" class="input-field" id="cname" name="cardname" placeholder="Name on Card" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="cnum" name="cardnumber" placeholder="Credit Card Number" >
+                    <input type="text" class="input-field" id="cnum" name="cardnumber" placeholder="Credit Card Number" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="expmonth" name="expmonth" placeholder="Exp Month" >
+                    <input type="text" class="input-field" id="expmonth" name="expmonth" placeholder="Exp Month" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" >
+                    <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" required>
                 </div>
                 <div class="input-submit">
-                    <a href="checkout.php"><button class="submit-btn" type="submit">Proceed to checkout</button></a>
+                    <button class="submit-btn" type="submit">Proceed to checkout</button>
                 </div>
             </form>
         </div>
