@@ -3,11 +3,11 @@
             <p>QUICK LINKS</p>
             <nav>
                 <ul>
-                    <br><li><a href="home.html">Home</a></li>
-                    <li><a href="cats.html">Cats</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <br><li><a href="home.php">Home</a></li>
+                    <li><a href="cats.php">Cats</a></li>
+                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
         </section>
         <section class="col-4">
             <div class="image">
-                <a href="home.html"><img src="images/logo-2.png"></a>
+                <a href="home.php"><img src="images/logo-2.png"></a>
             </div>
         </section>
     </footer>

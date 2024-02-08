@@ -17,16 +17,16 @@
 <!-- Header -->
     <header class="header-container">
         <div class="page-header">
-            <div class="logo"><a href="Task1.php"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="home.php"><img src="images/logo.png"></a></div>
             <nav class="navigation">
                 <ul>
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="cats.php">Task 2</a></li>
-                    <li><a href="shop.php">Task 3</a></li>
-                    <li><a href="about.php">Task 4</a></li>
-                    <li><a href="contact.php">Task 5</a></li>
+                    <li><a href="home.php">HOME</a></li>
+                    <li><a href="cats.php">CATS</a></li>
+                    <li><a href="shop.php">SHOP</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                     <div class="search-icon"><li><a href="#"><img src="images/search_.png"></a></li></div>
-                    <div class="shopping-icon"><li><a href="shopping-cart.html"><img src="images/shopping-cart.png"></a></li></div>
+                    <div class="shopping-icon"><li><a href="shopping-cart.php"><img src="images/shopping-cart.png"></a></li></div>
                 </ul>
             </nav>
         </div>
