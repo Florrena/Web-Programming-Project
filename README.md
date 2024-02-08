@@ -117,8 +117,8 @@ the customer is able to ask quesions or give suggestions/opinions to the Silicat
 
 List any tables that you have created in the project work (probably update later)
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Walid, Janika): Available cats
+- Table 2 (Ania, Viktor): Cart
+
 
 ---
