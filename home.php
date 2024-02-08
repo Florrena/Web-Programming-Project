@@ -16,7 +16,7 @@ include ("header.php");
                 <h1> Trouble choosing? Let our cats choose you!</h1>
                  <div class="grid-container">
                     <p>Click the 'Show Cat' button, and let our magical algorithm introduce you to the paw-fect companion waiting to bring joy and warmth into your home. Your new best friend is just a click away!</p>
-                    <a href="cat-description.html"><button class="show-cat-button">
+                    <a href="cat-description.php"><button class="show-cat-button">
                         Show Cat
                         <img src="images/paw.webp" alt="Cat Icon">
                         </button></a>
