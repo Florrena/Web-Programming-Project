@@ -30,20 +30,20 @@ include ("header.php");
             <form action="#" method="POST" class="adoption-form">
                 <h4>PAYMENT INFO</h4>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
+                    <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" >
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" required>
+                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" >
                 </div>
                 <div class="input-box">
-                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required>
+                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" >
                 </div>
                 <div class="input-box">
-                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address, City, ZIP Code" required></textarea>
+                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address, City, ZIP Code" ></textarea>
                 </div>
                 <div class="input-box">
                     <label for="experience">Choose your payment method:</label>
-                    <select id="experience" name="experience" class="input-field" required>
+                    <select id="experience" name="experience" class="input-field" >
                         <option class ="option" value="VISA">VISA</option>
                         <option class ="option" value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
                         <option class ="option" value="MASTERCARD">MASTERCARD</option>
@@ -51,19 +51,19 @@ include ("header.php");
                     </select>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="cname" name="cardname" placeholder="Name on Card" required>
+                    <input type="text" class="input-field" id="cname" name="cardname" placeholder="Name on Card" >
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="cnum" name="cardnumber" placeholder="Credit Card Number" required>
+                    <input type="text" class="input-field" id="cnum" name="cardnumber" placeholder="Credit Card Number" >
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="expmonth" name="expmonth" placeholder="Exp Month" required>
+                    <input type="text" class="input-field" id="expmonth" name="expmonth" placeholder="Exp Month" >
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" required>
+                    <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" >
                 </div>
                 <div class="input-submit">
-                    <button class=" submit-btn" type="submit">Proceed to checkout</button>
+                    <a href="checkout.php"><button class="submit-btn" type="submit">Proceed to checkout</button></a>
                 </div>
             </form>
         </div>
