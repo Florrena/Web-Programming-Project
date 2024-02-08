@@ -3,28 +3,6 @@ include ("header.php");
 
 ?>
 
-<!-- Header -->
-<header class="header-container">
-    <div class="page-header">
-        <div class="logo"><a href="home.html"><img src="images/logo.png"></a></div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li class="cats"><a href="cats.html">CATS</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <div class="search-icon">
-                    <li><a href="checkout.html"><img src="images/search_.png"></a></li>
-                </div>
-                <div class="shopping-icon">
-                    <li><a href="shopping-cart.html"><img src="images/shopping-cart.png"></a></li>
-                </div>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 <!-- Home body container -->
     <div class="body-container">
 
@@ -67,7 +45,6 @@ include ("header.php");
     </div>
 
 <?php
-
 
 include ("footer.php");
 
