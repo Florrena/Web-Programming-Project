@@ -20,13 +20,11 @@
             <div class="logo"><a href="Task1.php"><img src="images/logo.png"></a></div>
             <nav class="navigation">
                 <ul>
-                    <li><a href="Task1.php">Task 1</a></li>
-                    <li><a href="Task2.php">Task 2</a></li>
-                    <li><a href="Task3.php">Task 3</a></li>
-                    <li><a href="Task4.php">Task 4</a></li>
-                    <li><a href="Task5.php">Task 5</a></li>
-                    <li><a href="Task6.php">Task 6</a></li>
-                    <li><a href="Task7.php">Task 7</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="cats.php">Task 2</a></li>
+                    <li><a href="shop.php">Task 3</a></li>
+                    <li><a href="about.php">Task 4</a></li>
+                    <li><a href="contact.php">Task 5</a></li>
                     <div class="search-icon"><li><a href="#"><img src="images/search_.png"></a></li></div>
                     <div class="shopping-icon"><li><a href="shopping-cart.html"><img src="images/shopping-cart.png"></a></li></div>
                 </ul>
