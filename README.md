@@ -85,8 +85,8 @@ List the database tables that are part of your project.
 - Table 7 (Janika): Contact-form table 
 
 
-> Include the ER Diagram of the database. 
-![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/e33ab1a5-c584-4f3a-98b8-5a683038b09c)
+> Include the ER Diagram of the database.
+> ![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/910c2d6e-2ced-4931-bd5b-f60549e6aee2)
 
 ---
 
