@@ -86,7 +86,8 @@ List the database tables that are part of your project.
 
 
 > Include the ER Diagram of the database.
-> ![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/910c2d6e-2ced-4931-bd5b-f60549e6aee2)
+![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/3be4e7d2-b34c-4e41-8d8d-1102f10c1936)
+
 
 ---
 
