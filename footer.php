@@ -8,7 +8,6 @@
                     <li><a href="shop.php">Shop</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><a href="available_cats.php">Available Cats</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
@@ -17,12 +16,12 @@
             <p>ADOPT OR GET INVOLVED</p>
             <nav>
                 <ul>
-                    <br><li><a href="#">Adoption Process</a></li>
-                    <li><a href="#">Available Cats</a></li>
-                    <li><a href="#">Foster a Cat</a></li>
+                    <br><li><a href="available_cats.php">Available Cats</a></li>
+                    <li><a href="#">Adoption Process</a></li>
+                    <li><a href="adoptout_cat.php">Adopt Out</a></li>
+                    <li><a href="signup.php">Become a Member</a></li>
                     <li><a href="#">Volunteer Opportunities</a></li>
                     <li><a href="#">Donate</a></li>
-                    <li><a href="#">Events</a></li>
                     <li><a href="#">Sponsor a Cat</a></li>
                     <li><a href="#">Partner with Us</a></li>
                 </ul>
@@ -42,7 +41,7 @@
         </section>
         <section class="col-4">
             <div class="image">
-                <a href="home.html"><img src="images/logo-2.png"></a>
+                <a href="home.php"><img src="images/logo-2.png"></a>
             </div>
         </section>
     </footer>
