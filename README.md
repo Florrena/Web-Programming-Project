@@ -118,8 +118,8 @@ the customer is able to ask quesions or give suggestions/opinions to the Silicat
 
 List any tables that you have created in the project work (probably update later)
 
-- Table 1 (Walid, Janika): Available cats
-- Table 2 (Ania, Viktor): Cart
+- Table 1 (Ania): Available cats
+- Table 2 (Viktor): Cart
 
 
 ---
