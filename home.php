@@ -16,7 +16,7 @@ include 'header.php'; ?>
                 <h1> Trouble choosing? Let our cats choose you!</h1>
                  <div class="grid-container">
                     <p>Click the 'Show Cat' button, and let our magical algorithm introduce you to the paw-fect companion waiting to bring joy and warmth into your home. Your new best friend is just a click away!</p>
-                    <a href="cat-description.html"><button class="show-cat-button">
+                    <a href="cat-description.php"><button class="show-cat-button">
                         Show Cat
                         <img src="images/paw.webp" alt="Cat Icon">
                         </button></a>
@@ -48,7 +48,7 @@ include 'header.php'; ?>
         <h1> Find a Loving Home for Your Furry Friend! </h1>
          <div class="grid-container">
             <p>We understand that life can throw unexpected challenges our way, and sometimes, caring for our beloved feline friends becomes overwhelming. But fret not! At Purrfect Haven Adoption Agency, we're here to lend a helping paw. Click the 'Adoption' button to begin the process of providing a new, loving home for your kitty.</p>
-            <a href="#"><button class="show-cat-button">
+            <a href="adoptout_cat.php"><button class="show-cat-button">
                 Adopt out
                 <img src="images/paw.webp" alt="Cat Icon">
             </button></a>
