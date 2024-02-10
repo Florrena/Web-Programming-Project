@@ -116,9 +116,9 @@ the customer is able to ask quesions or give suggestions/opinions to the Silicat
 
 ## Created Tables
 
-List any tables that you have created in the project work (probably update later)
+List any tables that you have created in the project work
 
-- Table 1 (Ania): Available cats
+- Table 1 (Ania): Available cats -> https://github.com/Florrena/Web-Programming-Project/blob/main/available_cats.php
 - Table 2 (Viktor): Cart
 
 
