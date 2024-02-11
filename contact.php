@@ -19,7 +19,7 @@ include 'header.php'; ?>
 <!-- Contact form -->
             <form>
             <div>
-                <label>Name & surname: </label><br>
+                <label>First name: </label><br>
                 <input type="Name"> 
             </div>
             <div>
@@ -32,7 +32,7 @@ include 'header.php'; ?>
             </div>
             <div>
                 <label>Inquiry:</label><br>
-                <input type="inquiry">
+                <textarea type="inquiry"></textarea>
             </div><br>
             <button>Submit</button>
             </form>

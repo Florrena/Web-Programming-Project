@@ -811,6 +811,45 @@ button:hover {
     text-align: justify;
 }
 
+.thanks-article{
+    font-family: 'Lato', sans-serif;
+    background-size: 80%;
+    background-repeat: no-repeat; 
+    background-position: right center;
+    font-size: 17px;
+    font-weight: bolder;
+    width:100%;
+    padding-bottom: 20px;
+    text-align: justify;
+    text-align: center;
+}
+
+
+.tomainpage {
+    text-align: center;
+    margin-top: 20px; /* Add margin for spacing if needed */
+}
+
+.tomainpage button {
+    max-width: 180px;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the block element */
+    background-color: #30333A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lato', 'sans-serif';
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tomainpage button:hover {
+    background-color: #30333A;
+    color: #ECA390;
+}
 
 
 /* Media query for small screens (mobile devices) */
