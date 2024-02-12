@@ -758,25 +758,39 @@ form {
 
 input[type="name"],
 input[type="email"],
-input[type="phonenumber"],
-input[type="inquiry"]{
+input[type="tel"]{
+    background-position: right center;
     margin-bottom: 10px;
     background-color:#8a8989;
-    border-radius:15px;
+    border-radius:10px;
     width: 100%;
-    padding-bottom: 20px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 5px;
 }
 
-input[type="inquiry"]{
+input[placeholder]{
+    font-family: 'Inter', sans-serif;
+    background-position: right center;
+    color: #000000;
+    font-weight: bold;
+}
+
+textarea[type="inquiry"]{
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
+    background-color:#8a8989;
+    border-radius:10px;
     display: flex;
     padding-bottom: 50px;
+    resize: none;
+    font-size: 15px;
+    width: 100%;
+    padding-left: 5px;
 }
 
 button{
     max-width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
     background-color: #30333A;
     color: #fff; 
     padding: 10px 20px; 
@@ -788,6 +802,9 @@ button{
     border-radius: 10px;
 }
 
+.input-submit-contact:hover{
+
+}
 button:hover {
     background-color: #30333A;
     color: #ECA390;

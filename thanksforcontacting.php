@@ -10,12 +10,12 @@ include 'header.php'; ?>
 
 
     <div class="thanks-article">
-        <br><p> Thankyou for contacting us! We will get back to you shortly via email.
+        <br><p> Thank you for contacting us! We will get back to you shortly via email.
         </p>
     </div>
     
     <div class="tomainpage">
-    <button> Get back to the main page </button>
+    <a href="home.php"><button> Get back to the main page </button></a>
     </div>
     <br>
 </div>

@@ -17,7 +17,7 @@ include 'header.php'; ?>
                 <img class="catpaw" src="images/paw.webp"></div>
 
 <!-- Contact form -->
-            <form>
+            <form method="POST" action="thanksforcontacting.php">
             <div>
                 <label>First name: </label><br>
                 <input type="Name"> 
@@ -28,13 +28,14 @@ include 'header.php'; ?>
             </div>
             <div>
                 <label>Phone number:</label><br>
-                <input type="phonenumber">
+                <input type="tel" pattern="[+]{1}[0-9]{11,14}" placeholder="+358 " required>
             </div>
             <div>
                 <label>Inquiry:</label><br>
                 <textarea type="inquiry"></textarea>
             </div><br>
-            <button>Submit</button>
+            <!--<button> Submit </button>-->
+                <button class="button" id="submit-contact">Submit</button>
             </form>
         </div>
 
