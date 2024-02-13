@@ -24,9 +24,7 @@ include 'header.php'; ?>
 
 <!-- Adopt cat button -->
                 <div class="button-placement">
-                    <button class="adopt-cat-button">
-                        <span>Adopt me</span>
-                    </button>
+                <a href="adoption-form.php"><button>Adopt me</button></a><br>
                 </div>
     </div>
 
