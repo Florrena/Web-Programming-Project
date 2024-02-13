@@ -8,9 +8,9 @@ include 'header.php'; ?>
 
 <div class="login-container">
     <div class="center">
-        <div class="login-header">
+        <div class="cat-header">
             <img src="images/paw.webp">
-            <h3>Log in to Begin Your Feline Journey!</h3>
+            <h1>Log in to Begin Your Feline Journey!</h1>
             <img src="images/paw.webp">
         </div>
     </div>
