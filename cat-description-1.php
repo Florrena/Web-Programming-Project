@@ -1,6 +1,9 @@
 <?php 
 $title = 'Cat description';
-include 'header.php'; ?>
+include 'header.php';
+
+$cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : null;
+?>
 
 <!-- Cat description body container -->
 <div class="body-container">

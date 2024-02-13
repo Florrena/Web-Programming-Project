@@ -1,6 +1,9 @@
 <?php 
 $title = 'Adoption Form';
-include 'header.php'; ?>
+include 'header.php'; 
+
+$cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : null;
+?>
 
     <div class="cat-header">
         <img src="images/paw.webp">
