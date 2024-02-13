@@ -1064,6 +1064,7 @@ h4 {
     .text-container{
         padding-right: 15%;
     }
+  
     .adoption-container{
         display: grid;
         align-items: justify;
@@ -1077,6 +1078,7 @@ h4 {
         object-fit: contain;
         width:75%;
     }
+
     /* Mobile Footer */
 
     .footer-container {

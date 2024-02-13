@@ -2,6 +2,12 @@
 $title = 'Adopt';
 include 'header.php'; ?>
 
+<div class="cat-header">
+        <img src="images/paw.webp">
+        <h1>Find a Loving Home for Your Furry Friend!</h1>
+        <img src="images/paw.webp">
+    </div>
+
 <div class="adoption-container">
         <div class="center">
             <form action="#" method="POST" class="adoption-form">

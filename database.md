@@ -33,6 +33,7 @@ CREATE TABLE `adopted_cats` (
 
 CREATE TABLE `adoption_form` (
   `user_id` int NOT NULL,
+  `cat_id` int NOT NULL,
   `fname` varchar(50) NOT NULL,
   `user_email` varchar(50) NOT NULL,
   `phone` int NOT NULL,
@@ -122,7 +123,8 @@ ALTER TABLE `adopted_cats`
 -- Indexes for table `adoption_form`
 --
 ALTER TABLE `adoption_form`
-  ADD KEY `fk_adoption_users` (`user_id`);
+  ADD KEY `fk_adoption_users` (`user_id`),
+  ADD KEY `fk_adoption_avcats` (`cat_id`);
 
 --
 -- Indexes for table `available_cats`
@@ -163,7 +165,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `available_cats`
 --
 ALTER TABLE `available_cats`
-  MODIFY `cat_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `cat_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -198,6 +200,7 @@ ALTER TABLE `adopted_cats`
 -- Constraints for table `adoption_form`
 --
 ALTER TABLE `adoption_form`
+  ADD CONSTRAINT `fk_adoption_avcats` FOREIGN KEY (`cat_id`) REFERENCES `available_cats` (`cat_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `fk_adoption_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
