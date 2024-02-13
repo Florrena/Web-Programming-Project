@@ -1064,7 +1064,19 @@ h4 {
     .text-container{
         padding-right: 15%;
     }
-  
+    .adoption-container{
+        display: grid;
+        align-items: justify;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 10px;
+
+    }
+
+    .adoption-form{
+        object-fit: contain;
+        width:75%;
+    }
     /* Mobile Footer */
 
     .footer-container {
