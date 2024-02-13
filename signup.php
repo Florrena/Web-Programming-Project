@@ -27,9 +27,7 @@ include 'header.php'; ?>
             </div>
             <div class="input-box">
                 <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Confirm Password" autocomplete="off" required>
+                <span id="passwordError" class="error"></span>
             </div>
             <div class="input-submit">
                 <button class="submit-btn" id="submit">SIGN UP</button>
@@ -43,7 +41,7 @@ include 'header.php'; ?>
 </div>
 </div>
 
-<script src="emailcheck.js"></script>
+<script src="validation.js"></script>
 
 
 <?php include 'footer.php'; ?>

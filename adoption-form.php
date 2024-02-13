@@ -16,10 +16,12 @@ include 'header.php'; ?>
                     <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" class="input-field" placeholder="Email" required><br>
+                    <span id="emailError" class="error"></span>
                 </div>
                 <div class="input-box">
-                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required>
+                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                    <span id="phoneError" class="error"></span>
                 </div>
                 <div class="input-box">
                     <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address" required></textarea>
@@ -64,5 +66,5 @@ include 'header.php'; ?>
             </form>
         </div>
     </div>
-    
+<script src="validation.js"></script>
 <?php include 'footer.php' ?>

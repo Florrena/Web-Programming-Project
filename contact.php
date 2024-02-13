@@ -20,15 +20,17 @@ include 'header.php'; ?>
             <form method="POST" action="thanksforcontacting.php">
             <div>
                 <label>First name: </label><br>
-                <input type="Name"> 
+                <input type="Name">
             </div>
             <div>
                 <label>E-mail:</label><br>
-                <input type="email">
+                <input type="email" id="email" class="input-field" placeholder="Email" required>
+                <span id="emailError" class="error"></span>
             </div>
             <div>
                 <label>Phone number:</label><br>
-                <input type="tel" pattern="[+]{1}[0-9]{11,14}" placeholder="+358 " required>
+                <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                <span id="phoneError" class="error"></span>
             </div>
             <div>
                 <label>Inquiry:</label><br>
@@ -58,4 +60,5 @@ include 'header.php'; ?>
                 </p>
         </div>
     </div>
+    <script src="validation.js"></script>
 <?php include 'footer.php'; ?>

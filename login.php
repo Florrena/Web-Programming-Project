@@ -19,11 +19,12 @@ include 'header.php'; ?>
                 <form action="logincheck.php" method="post" class="loginform">
                     <h4>LOGIN</h4>
                     <div class="input-box">
-                        <input type="email" id="email" class="input-field" placeholder="Email" required>
-                        <span id="emailError" class="error"></span>
+                    <input type="email" id="email" class="input-field" placeholder="Email" required><br>
+                    <span id="emailError" class="error"></span>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+                        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required><br>
+                        <span id="passwordError" class="error"></span>
                     </div>
                     <div class="input-submit">
                         <button class="submit-btn" id="submit">SIGN IN</button>
@@ -35,5 +36,5 @@ include 'header.php'; ?>
         </div>
     </div>
 
-<script src="emailcheck.js"></script>
+<script src="validation.js"></script>
 <?php include 'footer.php'; ?>
