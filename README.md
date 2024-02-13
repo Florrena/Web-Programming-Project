@@ -16,25 +16,25 @@ We created a cat adoption website, where you can adopt cute cats, put a cat up f
 1. Basket icon/shop(payment page) + Tables inStock/purchased products + customers //Viktor
 
 2. Login/sign in page + Adding members to the database //Ania
-   Give up cat for adoption page //Ania
 
-3. Contact form + Table for info and customers //Janika
+3. Give up cat for adoption page //Ania
 
-4. Form for people who adopt a cat + Table for adopted and not adopted cats //Walid
+4. Contact form + Table for info and customers //Janika
+
+5. Form for people who adopt a cat + Table for adopted and not adopted cats //Walid
 
 ## Features
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Viktor): basket icon/shop(payment page).
-- [ ] Feature 2 (Ania): log in/sign in page
-- [ ] Feature 3 (Ania): give up cat for adoption page.
-- [ ] Feature 4 (Janika): contact form.
-- [ ] Feature 5 (Walid): adoption form.
+- [✓] Feature 1 (Viktor): basket icon/shop(payment page).
+- [✓] Feature 2 (Ania): log in/sign in page
+- [✓] Feature 3 (Ania): give up cat for adoption page.
+- [✓] Feature 4 (Janika): contact form.
+- [✓] Feature 5 (Walid): adoption form.
 - [ ] Feature 6 (Not started yet): slide home banners.
 - [ ] Feature 7 (Not started yet): search button.
 - [ ] Feature 8 (Not started yet): slide out menu for mobile/normal page.
-- [ ] Feature 9 (Not started yet): random cat button.
 
 > Add features as required. 
 ### Feature 1
@@ -69,9 +69,7 @@ We will make the search button interactive and working, and also make it slide o
 
 We will make a slide out menu in our header. The concept is to make it look more mobile user-friendly.
 
-### Feature 9
 
-We will make the 'random cat button' generate a random cat page every time a customer clicks on it, making it easier for the customer if they have any trouble deciding on which cat to choose.
 
 ---
 
@@ -79,13 +77,17 @@ We will make the 'random cat button' generate a random cat page every time a cus
 
 List the database tables that are part of your project. 
 
-- Table 1 (Ania): Customer/user table
-- Table 2 (Walid): Cat table Adopted/Available
-- Table 3 (Walid): Tables for adoption and inquery
-- Table 4 (Viktor): Products InStock/Bought
-- Table 5 (Janika): Customer's messages (messages that they provided in the contact form section)
+- Table 1 (Ania): user table
+- Table 2-3 (Ania): Cat table Adopted/Available
+- Table 4 (Ania): Adopt-out-form table
+- Table 5 (Walid): adoption-form table
+- Table 6 (Viktor): Products InStock/Bought
+- Table 7 (Janika): Contact-form table 
 
-> Include the ER Diagram of the database. 
+
+> Include the ER Diagram of the database.
+![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/3be4e7d2-b34c-4e41-8d8d-1102f10c1936)
+
 
 ---
 
@@ -93,21 +95,31 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1: (Viktor): Form Name: Payment form 
-- Form 2: (Ania): Form Name: Login/sign in form
-- Form 3: (Ania): Form Name: Putting cat for adoption form
-- Form 3: (Walid): Form Name: Cat adoption form
-- Form 3: (Janika): Form Name: Contact form
+- [✓] Form 1: (Viktor): Form Name: Payment form 
+- [✓] Form 2: (Ania): Form Name: Login/sign in form
+- [✓] Form 3: (Ania): Form Name: Adopt-out form
+- [✓] Form 4: (Walid): Form Name: Adopt form
+- [✓] Form 5: (Janika): Form Name: Contact form
 
+### form 1
+The customers are able to make a purchase.
+### form 2
+The customers are able to sign up and use the other forms in the website
+### form 3
+The customer is able to put his cat for adoption for various reasons.
+### form 4 
+The customer is able to adopt a cat
+### form 5
+the customer is able to ask quesions or give suggestions/opinions to the Silicate Company.
 
 ---
 
 ## Created Tables
 
-List any tables that you have created in the project work (probably update later)
+List any tables that you have created in the project work
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Ania): Available cats -> https://github.com/Florrena/Web-Programming-Project/blob/main/available_cats.php
+- Table 2 (Viktor): Cart
+
 
 ---
