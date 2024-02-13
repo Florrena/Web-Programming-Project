@@ -19,7 +19,8 @@ include 'header.php'; ?>
                 <form action="logincheck.php" method="post" class="loginform">
                     <h4>LOGIN</h4>
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username" autocomplete="off" required>
+                        <input type="email" id="email" class="input-field" placeholder="Email" required>
+                        <span id="emailError" class="error"></span>
                     </div>
                     <div class="input-box">
                         <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
@@ -33,4 +34,6 @@ include 'header.php'; ?>
                 </form>
         </div>
     </div>
+
+<script src="emailcheck.js"></script>
 <?php include 'footer.php'; ?>

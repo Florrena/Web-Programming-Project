@@ -22,7 +22,8 @@ include 'header.php'; ?>
                 <input type="text" class="input-field" id="fname" placeholder="Full Name" autocomplete="off" required>
             </div>
             <div class="input-box">
-                <input type="email" id="email" class="input-field" placeholder="Email" pattern=".+@example\.com" required >
+                <input type="email" id="email" class="input-field" placeholder="Email" required>
+                <span id="emailError" class="error"></span>
             </div>
             <div class="input-box">
                 <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
@@ -41,6 +42,8 @@ include 'header.php'; ?>
     </div>
 </div>
 </div>
+
+<script src="emailcheck.js"></script>
 
 
 <?php include 'footer.php'; ?>
