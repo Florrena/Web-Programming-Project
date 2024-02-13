@@ -873,6 +873,7 @@ button:hover {
     background-image: url(images/bannerpaw.png);
     background-repeat: no-repeat; 
     background-position: center right ;
+    margin:0px;
     
 }
 
