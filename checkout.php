@@ -2,30 +2,74 @@
 include ("header.php");
 
 ?>
-  
-<!-- Home body container -->
-<div class="body-container">
-
-<!-- Banner -->
-    <div class="home-banner-container">
-        <img src="images/siamese-banner.jpg" alt="banner" draggable="false">
+    <div class="cat-header">
+        <img src="images/paw.webp">
+        <h1>Meow that's what I call a great order! Your feline friend will be 'feline' fine in no time!</h1>
+        <img src="images/paw.webp">
     </div>
 
 
-    <div class="randomcat">
-                <h1> Congratulations on your purr-chase! You've just made a 'pawsitive' addition to your life!</h1>
-                 <div class="grid-container">
-                    <p>Thank you for shopping at Silicate Adoption!
-                      Your order details have been sent to the email address you have provided, if you want to change your order or if you have any other questions regarding the order status
-                      please feel free to contact us.</p>
-                    <a href="home.php"><button class="show-cat-button">
-                        Return to home page
-                        <img src="images/paw.webp" alt="Cat Icon">
-                        </button></a>
-                </div>
-        </div>
+<div class="article">
+      <h4>Your cart</h4>
+      <p>Product 1 <span class="price">$15</span></p>
+      <p>Product 2 <span class="price">$5</span></p>
+      <p>Product 3 <span class="price">$8</span></p>
+      <p>Product 4 <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
 
-  
+
+
+
+
+    <div class="adoption-container">
+        <div class="center">
+            <form action="thanks.php" method="get" class="adoption-form">
+                <h4>PAYMENT INFO</h4>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="input-box">
+                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Delivery Address" required></textarea>
+                </div>
+                <div class="input-box">
+                    <label for="experience">Choose your payment method:</label>
+                    <select id="experience" name="experience" class="input-field" required>
+                        <option class ="option" value="VISA">VISA</option>
+                        <option class ="option" value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                        <option class ="option" value="MASTERCARD">MASTERCARD</option>
+                        <option class ="option" value="PAYPAL">PAYPAL</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="cname" name="cardname" placeholder="Name on Card" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="cnum" name="cardnumber" placeholder="Credit Card Number" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="expmonth" name="expmonth" placeholder="Exp Month" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" required>
+                </div>
+                <div class="input-submit">
+                    <button class="submit-btn" type="submit">Proceed to checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
 <?php
 
 include ("footer.php");
