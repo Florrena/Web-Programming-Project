@@ -64,10 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function validatePassword(password) {
     // This format checks if the password has at least 8 characters, including at least one uppercase letter, one lowercase letter, and one digit
-    var passwordRegex = /^(?=.[a-z])(?=.[A-Z])(?=.*\d).{8,}$/;
+    var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
     return passwordRegex.test(password);
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     var passwordInput = document.getElementById('password');
     var passwordError = document.getElementById('passwordError');
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (passwordValue.trim() === '') {
             passwordError.innerHTML = 'Password is required';
         } else if (!validatePassword(passwordValue)) {
-            passwordError.innerHTML = 'Please enter a valid password with at least 8 characters, including one uppercase letter, one lowercase letter, and one digit.';
+            passwordError.innerHTML = 'Please enter a valid password with at least 8 characters, one uppercase and lowercase letter and one digit.';
         }
     });
 });

@@ -23,9 +23,9 @@ include 'header.php'; ?>
                     <span id="emailError" class="error"></span>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required><br>
-                        <span id="passwordError" class="error"></span>
-                    </div>
+                    <input type="password" id="password" name="user_password" class="input-field" placeholder="Password" >
+                    <span id="passwordError" class="error"></span>
+                </div>
                     <div class="input-submit">
                         <button class="submit-btn" id="submit">SIGN IN</button>
                     </div>

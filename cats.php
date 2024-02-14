@@ -17,7 +17,7 @@ include 'header.php'; ?>
         <?php
         $cats = [
             ['cat_id' => 1, 'name' => 'Bunker Buster', 'image' => 'images/bunker-buster.png'],
-            ['cat_id' => 2, 'name' => 'Tole Tole', 'image' => 'images/stink-bomb.png'],
+            ['cat_id' => 2, 'name' => 'Tole Tole', 'image' => 'images/toletole.jpg'],
             ['cat_id' => 3, 'name' => 'Jägermeister', 'image' => 'images/chernobyl.png'],
             ['cat_id' => 4, 'name' => 'Herbert', 'image' => 'images/herbert.jpeg'],
             ['cat_id' => 5, 'name' => 'Don Giovanni', 'image' => 'images/mafia-cat.jpg'],
@@ -38,3 +38,5 @@ include 'header.php'; ?>
 </div>
 
 <?php include 'footer.php'; ?>
+
+

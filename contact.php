@@ -19,17 +19,17 @@ include 'header.php'; ?>
 <!-- Contact form -->
             <form method="POST" action="thanksforcontacting.php">
             <div>
-                <label>First name: </label><br>
+                <label>Full name: </label><br>
                 <input type="Name">
             </div>
             <div>
                 <label>E-mail:</label><br>
-                <input type="email" id="email" class="input-field" placeholder="Email" required>
+                <input type="contact-email" id="email" class="input-field"  required>
                 <span id="emailError" class="error"></span>
             </div>
             <div>
                 <label>Phone number:</label><br>
-                <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                <input type="contact-tel" class="input-field" id="phone" name="phone"  required><br>
                 <span id="phoneError" class="error"></span>
             </div>
             <div>

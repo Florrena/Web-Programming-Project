@@ -1,16 +1,77 @@
+
 <?php 
 $title = 'Adopt';
 include 'header.php'; ?>
 
-<div class="cat-header">
-        <img src="images/paw.webp">
-        <h1>Find a Loving Home for Your Furry Friend!</h1>
-        <img src="images/paw.webp">
+
+
+
+<?php
+$message = ""; // Initialize an empty message variable
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+// Check if the 'submit' button in the form was clicked
+if (isset($_POST['submit'])) {
+    // Retrieve data from the form and store it in variables
+    $catname = $_POST['catname'];      // Cat name
+    $fname = $_POST['fname'];            // First name
+    $email = $_POST['email'];            // Email
+    $phone = $_POST['phone'];            // Phone
+    $age = $_POST['age'];                // Age
+    $reasons = $_POST['catadoptionReason'];        // Reasons
+    $comments = $_POST['additionalComments'];      // Comments
+
+    // Include the database connection file
+    include 'db.php';
+
+    // Retrieve user_id from the 'users' table based on the user's email
+    $userEmail = mysqli_real_escape_string($conn, $email);
+    $userQuery = "SELECT user_id FROM users WHERE user_email = '$email'";
+    $userResult = $conn->query($userQuery);
+
+    if ($userResult->num_rows > 0) {
+        $row = $userResult->fetch_assoc();
+        $userId = $row['user_id'];
+
+        // Define an SQL query to insert data into the 'adopt-out-form' table
+        $sql = "INSERT INTO `adopt-out-form` (user_id, cat_name, fname, user_email, phone, age, reasons, comments)
+        VALUES ('$userId', '$catname', '$fname', '$email', '$phone', '$age', '$reasons', '$comments')";
+        $sql = "INSERT INTO `available_cats` (cat_name, adoption_status, user_email)
+        VALUES ( '$catname','Available', '$email' )";
+
+        // Execute the SQL query using the database connection
+        if ($conn->query($sql) === TRUE) {
+            // If the query was successful, set a success message
+            $message = "Form submitted successfully";
+        } else {
+            // If there was an error in the query, set an error message
+            $message = "Error: " . $sql . "<br>" . $conn->error;
+        }
+    } else {
+        // If the user with the specified email is not found, display an error message
+        $message = "User not found with email: $email, please register first.";
+    }
+
+    // Close the database connection
+    $conn->close();
+}
+?>
+
+
+<div class="login-container">
+    <div class="center">
+    <div class="cat-header">
+    <img src="images/paw.webp">
+    <h1>Find a Loving Home for Your Furry Friend!</h1>
+    <img src="images/paw.webp">
+        </div>
     </div>
+</div>
+
 
 <div class="adoption-container">
-        <div class="center">
-            <form action="#" method="POST" class="adoption-form">
+        <div class="center-2">
+                <form action="" method="post" class="adoption-form">
                 <h4>ADOPT OUT</h4>
                 <div class="input-box">
                     <input type="text" class="input-field" id="catname" name="catname" placeholder="Cat Name" required>
@@ -19,15 +80,12 @@ include 'header.php'; ?>
                     <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
                 </div>
                 <div class="input-box">
-                <input type="email" id="email" class="input-field" placeholder="Email" required><br>
-                <span id="emailError" class="error"></span>
+                    <input type="email" id="email" name="email" class="input-field" placeholder="Email" required><br>
+                    <span id="emailError" class="error"></span>
                 </div>
                 <div class="input-box">
-                    <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                    <input type="phone" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
                     <span id="phoneError" class="error"></span>
-                </div>
-                <div class="input-box">
-                    <textarea class="input-field" id="address" name="address" rows="4" placeholder="Address" required></textarea>
                 </div>
                 <div class="input-box">
                     <input type="number" class="input-field" id="age" name="age" placeholder="Age" required>
@@ -47,9 +105,12 @@ include 'header.php'; ?>
                     <textarea id="additionalComments" name="additionalComments" class="input-field" rows="4"></textarea>
                 </div>
                 <div class="input-submit">
-                    <button class=" submit-btn" type="submit">Submit</button>
+                    <button type="submit" class="submit-btn" name="submit">SUMBIT</button>
                 </div>
             </form>
+            <div class="message">
+                <?php echo $message; ?>
+                </div>
         </div>
     </div>
 <script src="validation.js"></script>

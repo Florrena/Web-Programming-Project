@@ -1,8 +1,7 @@
 <?php
-$title = 'Cat description';
+$title = 'Herbert';
 include 'header.php';
-
-$cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : null;
+$cat_id = 4;
 ?>
 
 <!-- Cat description body container -->
@@ -47,7 +46,8 @@ $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : null;
 
     <!-- Adopt cat button -->
     <div class="button-placement">
-        <a href="adoption-form.php"><button>Adopt me</button></a><br>
+        <a href="adoption-form.php?cat_id=<?php echo $cat_id; ?>"><button>Adopt me</button></a>
+        <br>
     </div>
 </div>
 
