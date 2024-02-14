@@ -12,7 +12,7 @@ session_start();
 
 <div class="body-container">
     <div class="cart-container">
-        <h1>Shopping Cart</h1>
+        <h1>Your Cart</h1>
         <table>
             <tr>
                 <th>Product</th>

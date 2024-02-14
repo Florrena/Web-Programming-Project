@@ -353,6 +353,51 @@ article{
     justify-content: center; 
 }
 
+.cart-container table {
+    padding-left: 10%;
+    width: 90%;
+}
+
+.cart-container table th,
+.cart-container table td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-family: 'Lato','sans-serif';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.cart-container h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lato','sans-serif';
+    font-weight: bolder;
+}
+
+.cart-container td {
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.cart-container th {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.cart-container table button [type="submit"] {
+    float: left;
+}
+
+.cart-container table input[type="number"] {
+    width: 35px;
+    height: 40px;
+    float: left;
+    font-family: 'Lato','sans-serif';
+    font-size: 15px;
+    margin-right: 10px;
+}
+
 
 
 
@@ -378,6 +423,8 @@ article{
     display: grid;
     place-items: center;
     margin: 0;
+    padding-left: 75px;
+    padding-top: 10px;
 }
 
 .adopt-cat-button{
