@@ -85,12 +85,13 @@ List the database tables that are part of your project.
 - Table 2 (Ania): Cat table Available
 - Table 3 (Ania): Adopt-out-form table
 - Table 4 (Walid): adoption-form table
-- Table 5 (Viktor): Orders
-- Table 6 (Janika): Contact-form table 
+- Table 5-6 (Viktor): Orders/Products
+- Table 7 (Janika): Contact-form table 
 
 
 > Include the ER Diagram of the database.
-![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/c3b6b6e3-dde4-4b61-9f54-cc35657f6c30)
+![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/2ed19b6f-db42-47f6-8893-1070a6c55529)
+
 
 
 
