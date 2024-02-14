@@ -34,7 +34,7 @@ In this section, list and describe the features or functionality that you are wo
 - [✓] Feature 5 (Walid): adoption form.
 - [ ] Feature 6 (Not started yet): slide home banners.
 - [ ] Feature 7 (Not started yet): search button.
-- [ ] Feature 8 (Not started yet): slide out menu for mobile/normal page.
+- [✓] Feature 8 (Janika): slide out menu for mobile/normal page.
 
 > Add features as required. 
 ### Feature 1
