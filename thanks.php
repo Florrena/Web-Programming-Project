@@ -3,10 +3,8 @@ include ("header.php");
 
 ?>
   
-<!-- Home body container -->
 <div class="body-container">
 
-<!-- Banner -->
     <div class="home-banner-container">
         <img src="images/siamese-banner.jpg" alt="banner" draggable="false">
     </div>

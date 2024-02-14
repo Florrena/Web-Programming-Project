@@ -1,6 +1,5 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
 
 if (isset($_POST['submit'])) {
     include 'config.php';
@@ -18,8 +17,8 @@ if (isset($_POST['submit'])) {
             $productPrice = $product['price'];
             $totalPrice += $productPrice * $quantity;
 
-            $sql = "INSERT INTO orders (order_id, product_id, quantity, fname, user_email, phone, address, payment_method, total_price)
-                    VALUES (1 ,$productId, $quantity, '$fullName', '$email', '$phone', '$address', '$paymentMethod', $totalPrice)";
+            $sql = "INSERT INTO orders (product_id, quantity, fname, user_email, phone, address, payment_method, total_price)
+                    VALUES ($productId, $quantity, '$fullName', '$email', '$phone', '$address', '$paymentMethod', $totalPrice)";
 
             if ($conn->query($sql) !== TRUE) {
                 echo "Error: " . $sql . "<br>" . $conn->error;
@@ -34,7 +33,6 @@ if (isset($_POST['submit'])) {
     }
 }
 
-// Close the database connection
 if ($conn) {
     $conn->close();
 }

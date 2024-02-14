@@ -3,6 +3,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location: shopcombo.php");
+header("Location: shopping-cart.php");
 exit(); 
 ?>
