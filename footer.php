@@ -17,7 +17,6 @@
             <nav>
                 <ul>
                     <br><li><a href="available_cats.php">Available Cats</a></li>
-                    <li><a href="adoption-form.php">Adoption Process</a></li>
                     <li><a href="adoptout_cat.php">Adopt Out</a></li>
                     <li><a href="signup.php">Become a Member</a></li>
                     <li><a href="contact.php">Volunteer Opportunities</a></li>

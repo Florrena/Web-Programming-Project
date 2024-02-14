@@ -7,19 +7,17 @@ include 'header.php'; ?>
 
 
 <?php
-$message = ""; // Initialize an empty message variable
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+$message = ""; 
 // Check if the 'submit' button in the form was clicked
 if (isset($_POST['submit'])) {
     // Retrieve data from the form and store it in variables
-    $catname = $_POST['catname'];      // Cat name
-    $fname = $_POST['fname'];            // First name
-    $email = $_POST['email'];            // Email
-    $phone = $_POST['phone'];            // Phone
-    $age = $_POST['age'];                // Age
-    $reasons = $_POST['catadoptionReason'];        // Reasons
-    $comments = $_POST['additionalComments'];      // Comments
+    $catname = $_POST['catname'];      
+    $fname = $_POST['fname'];            
+    $email = $_POST['email'];            
+    $phone = $_POST['phone'];            
+    $age = $_POST['age'];                
+    $reasons = $_POST['catadoptionReason'];        
+    $comments = $_POST['additionalComments'];     
 
     // Include the database connection file
     include 'db.php';
@@ -35,12 +33,13 @@ if (isset($_POST['submit'])) {
 
         // Define an SQL query to insert data into the 'adopt-out-form' table
         $sql = "INSERT INTO `adopt-out-form` (user_id, cat_name, fname, user_email, phone, age, reasons, comments)
-        VALUES ('$userId', '$catname', '$fname', '$email', '$phone', '$age', '$reasons', '$comments')";
-        $sql = "INSERT INTO `available_cats` (cat_name, adoption_status, user_email)
-        VALUES ( '$catname','Available', '$email' )";
+        VALUES ('$userId', '$catname', '$fname', '$email', '$phone', '$age', '$reasons', '$comments');";
+
+        $sql .= "INSERT INTO `available_cats` (cat_name, adoption_status, owner)
+        VALUES ('$catname', 'Available', '$email');";
 
         // Execute the SQL query using the database connection
-        if ($conn->query($sql) === TRUE) {
+        if ($conn->multi_query($sql) === TRUE) {
             // If the query was successful, set a success message
             $message = "Form submitted successfully";
         } else {
@@ -106,11 +105,11 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="input-submit">
                     <button type="submit" class="submit-btn" name="submit">SUMBIT</button>
-                </div>
-            </form>
-            <div class="message">
+                </div><br>
+                <div class="message">
                 <?php echo $message; ?>
                 </div>
+            </form>
         </div>
     </div>
 <script src="validation.js"></script>

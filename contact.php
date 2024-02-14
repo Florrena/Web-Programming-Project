@@ -2,6 +2,15 @@
 $title = 'Contact';
 include 'header.php'; ?>
 
+
+
+
+
+
+
+
+
+
 <!-- Banner image -->
 <div class="contact-banner-container">
         <img src="images/contact-cat.png" alt="banner" draggable="false">
@@ -17,28 +26,29 @@ include 'header.php'; ?>
                 <img class="catpaw" src="images/paw.webp"></div>
 
 <!-- Contact form -->
-            <form method="POST" action="thanksforcontacting.php">
+            <form method="post" action="thanksforcontacting.php">
             <div>
                 <label>Full name: </label><br>
-                <input type="Name">
+                <input type="name"  id="fname" name="fname" required>
             </div>
             <div>
                 <label>E-mail:</label><br>
-                <input type="contact-email" id="email" class="input-field"  required>
+                <input type="email" id="email" name="email"  required>
                 <span id="emailError" class="error"></span>
             </div>
             <div>
                 <label>Phone number:</label><br>
-                <input type="contact-tel" class="input-field" id="phone" name="phone"  required><br>
+                <input type="tel"  id="phone" name="phone" required><br>
                 <span id="phoneError" class="error"></span>
             </div>
             <div>
                 <label>Inquiry:</label><br>
-                <textarea type="inquiry"></textarea>
+                <textarea type="inquiry" name="inquiry" id="inquiry"></textarea>
             </div><br>
-            <!--<button> Submit </button>-->
-                <button class="button" id="submit-contact">Submit</button>
-            </form>
+            <div class="input-submit">
+                    <button type="submit" class="submit-btn" name="submit">Submit</button>
+            </div>
+        </form>
         </div>
 
 <!-- Contact body text  -->

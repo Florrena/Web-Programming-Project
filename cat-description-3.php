@@ -26,7 +26,7 @@ $cat_id = 3;
     <!-- Adopt cat button -->
     <div class="button-placement">
         <a href="adoption-form.php?cat_id=<?php echo $cat_id; ?>"><button>Adopt me</button></a>
-        <b4>
+        <br>
     </div>
 </div>
 

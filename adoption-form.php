@@ -3,6 +3,45 @@ $title = 'Adoption Form';
 include 'header.php';
 ?>
 
+<?php
+$message = ""; 
+// Check if the 'submit' button in the form was clicked
+if (isset($_POST['submit'])) {
+    // Include the database connection file
+    include 'db.php';
+
+    // Retrieve form data
+    $fname = $_POST['fname'];
+    $user_email = $_POST['user_email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $age = $_POST['age'];
+    $occupation = $_POST['occupation'];
+    $experience = $_POST['experience'];
+    $house_type = $_POST['house_type'];
+    $reasons = $_POST['reasons'];
+    $comments = $_POST['comments'];
+    $cat_id = $_POST['cat_id']; // Retrieve the cat_id from the form data
+
+   
+    $conn->autocommit(FALSE); 
+    $sql1 = "INSERT INTO adoption_form (cat_id, fname, user_email, phone, address, age, occupation, experience, house_type, reasons, comments)
+            VALUES ('$cat_id', '$fname', '$user_email', '$phone', '$address', '$age', '$occupation', '$experience', '$house_type', '$reasons', '$comments')";
+    
+    $sql2 = "DELETE FROM available_cats WHERE cat_id = '$cat_id'";
+    
+    if ($conn->query($sql1) === TRUE && $conn->query($sql2) === TRUE) {
+        $conn->commit();  
+        $message= "Thank you for submitting the form. We will contact you shortly.";
+    } else {
+        $conn->rollback();  
+        $message= "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
+    
+}
+?>
+
 <div class="cat-header">
     <img src="images/paw.webp">
     <h1>Find Your Feline Friend: Begin Your Adoption Journey Today</h1>
@@ -11,7 +50,7 @@ include 'header.php';
 
 <div class="adoption-container">
     <div class="center">
-        <form action="adoption-form-process.php" method="POST" class="adoption-form">
+        <form action="" method="post" class="adoption-form">
             <input type="hidden" name="cat_id" value="<?php echo htmlspecialchars($_GET['cat_id'] ?? ''); ?>">
             <h4>ADOPTION FORM</h4>
             <div class="input-box">
@@ -22,7 +61,7 @@ include 'header.php';
                 <span id="emailError" class="error"></span>
             </div>
             <div class="input-box">
-                <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                <input type="phone" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
                 <span id="phoneError" class="error"></span>
             </div>
             <div class="input-box">
@@ -66,6 +105,9 @@ include 'header.php';
             </div>
             <div class="input-submit">
                 <button class="submit-btn" type="submit" name="submit">Submit</button>
+            </div><br>
+            <div class="message">
+            <?php echo $message; ?>
             </div>
         </form>
     </div>
