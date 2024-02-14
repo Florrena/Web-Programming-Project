@@ -1,7 +1,7 @@
 <?php 
 $title = 'Bunker Buster';
 include 'header.php';
-$cat_id = 1
+$cat_id = 1;
 ?>
 
 <!-- Cat description body container -->

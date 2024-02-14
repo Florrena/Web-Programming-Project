@@ -2,18 +2,15 @@
 $title = 'Adoption Form';
 include 'header.php';
 ?>
-<div class="login-container">
-    <div class="center">
-    <div class="cat-header">
+
+<div class="cat-header">
     <img src="images/paw.webp">
     <h1>Find Your Feline Friend: Begin Your Adoption Journey Today</h1>
     <img src="images/paw.webp">
 </div>
-</div>
-</div>
 
 <div class="adoption-container">
-    <div class="center-2">
+    <div class="center">
         <form action="adoption-form-process.php" method="POST" class="adoption-form">
             <input type="hidden" name="cat_id" value="<?php echo htmlspecialchars($_GET['cat_id'] ?? ''); ?>">
             <h4>ADOPTION FORM</h4>
