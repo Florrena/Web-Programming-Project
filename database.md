@@ -7,32 +7,18 @@ CREATE TABLE `adopt-out-form` (
   `fname` varchar(50) NOT NULL,
   `user_email` varchar(50) NOT NULL,
   `phone` int NOT NULL,
-  `address` varchar(50) NOT NULL,
   `age` int NOT NULL,
   `reasons` varchar(15) NOT NULL,
-  `comments` varchar(100) NOT NULL
+  `comments` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 
 --
 
--- table 2: Ania --
 
-CREATE TABLE `adopted_cats` (
-  `cat_id` int NOT NULL,
-  `user_id` int NOT NULL,
-  `cat_name` varchar(50) NOT NULL,
-  `adoption_status` enum('Available','Adopted') NOT NULL,
-  `owner_name` varchar(50) NOT NULL,
-  `user_email` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
-
--- table 3: Walid --
+-- table 2: Walid --
 
 CREATE TABLE `adoption_form` (
-  `user_id` int NOT NULL,
   `cat_id` int NOT NULL,
   `fname` varchar(50) NOT NULL,
   `user_email` varchar(50) NOT NULL,
@@ -49,7 +35,7 @@ CREATE TABLE `adoption_form` (
 --
 
 
--- table 4: Ania --
+-- table 3: Ania --
 
 CREATE TABLE `available_cats` (
   `cat_id` int NOT NULL,
@@ -58,10 +44,17 @@ CREATE TABLE `available_cats` (
   `owner` varchar(50) NOT NULL COMMENT 'email/Silicate'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
+
+INSERT INTO `available_cats` (`cat_id`, `cat_name`, `adoption_status`, `owner`) VALUES
+(1, 'Bunker Buster', 'Available', 'Silicate'),
+(2, 'Tole Tole', 'Available', 'Silicate'),
+(3, 'Jägermeister', 'Available', 'Silicate'),
+(4, 'Herbert', 'Available', 'Silicate'),
+
 --
 
 
--- table 5: Janika --
+-- table 4: Janika --
 
 CREATE TABLE `Contact_form` (
   `user_id` int NOT NULL,
@@ -73,57 +66,49 @@ CREATE TABLE `Contact_form` (
 
 --
 
--- table 6: Viktor --
+-- table 5: Viktor --
 
-CREATE TABLE `products` (
+CREATE TABLE `orders` (
+  `order_id` int NOT NULL,
   `product_id` int NOT NULL,
-  `product_name` varchar(50) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `in_stock` int NOT NULL
+  `quantity` int NOT NULL,
+  `fname` varchar(100) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `payment_method` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `total_price` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
+INSERT INTO `orders` (`order_id`, `product_id`, `quantity`, `fname`, `user_email`, `phone`, `address`, `payment_method`, `total_price`) VALUES
+(4, 1, 1, 'Viktor Trilar', 'viktor.trilar1@gmail.com', '+38640239095', 'Ljubljanska cesta 31A', 'VISA', '30.99');
 --
 
--- table 7: Viktor --
 
-CREATE TABLE `shopping_cart` (
-  `user_id` int NOT NULL,
-  `user_email` varchar(50) NOT NULL,
-  `product_id` int NOT NULL,
-  `quantity` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
-
--- table 8: Ania --
+-- table 7: Ania --
 
 CREATE TABLE `users` (
   `user_id` int NOT NULL,
   `fname` varchar(50) NOT NULL,
   `user_email` varchar(50) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `user_password` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
+INSERT INTO `users` (`user_id`, `fname`, `user_email`, `user_password`) VALUES
+(7, 'asd', 'anna@gmail.com', 'sad'),
+(9, 'sahil', 'sahil@gmail.com', 'poop'),
+(14, 'Janika', 'janika@gmail.com', 'nomnom'),
+(15, 'Viktor', 'viktor@gmail.com', 'aaaa'),
+
 --
 
--- Indexes for table `adopt-out-form`
---
 ALTER TABLE `adopt-out-form`
   ADD KEY `fk_adoptout_users` (`user_id`);
-
---
--- Indexes for table `adopted_cats`
---
-ALTER TABLE `adopted_cats`
-  ADD KEY `fk_adoptedcats_users` (`user_id`),
-  ADD KEY `fk_adoptedcats_availablecats` (`cat_id`);
 
 --
 -- Indexes for table `adoption_form`
 --
 ALTER TABLE `adoption_form`
-  ADD KEY `fk_adoption_users` (`user_id`),
   ADD KEY `fk_adoption_avcats` (`cat_id`);
 
 --
@@ -139,17 +124,10 @@ ALTER TABLE `Contact_form`
   ADD KEY `fk_contact_users` (`user_id`);
 
 --
--- Indexes for table `products`
+-- Indexes for table `orders`
 --
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`product_id`);
-
---
--- Indexes for table `shopping_cart`
---
-ALTER TABLE `shopping_cart`
-  ADD KEY `fk_cart_users` (`user_id`),
-  ADD KEY `fk_cart_products` (`product_id`);
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_id`);
 
 --
 -- Indexes for table `users`
@@ -165,19 +143,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `available_cats`
 --
 ALTER TABLE `available_cats`
-  MODIFY `cat_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cat_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT for table `orders`
 --
-ALTER TABLE `products`
-  MODIFY `product_id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `orders`
+  MODIFY `order_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
@@ -190,28 +168,7 @@ ALTER TABLE `adopt-out-form`
   ADD CONSTRAINT `fk_adoptout_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `adopted_cats`
---
-ALTER TABLE `adopted_cats`
-  ADD CONSTRAINT `fk_adoptedcats_availablecats` FOREIGN KEY (`cat_id`) REFERENCES `available_cats` (`cat_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  ADD CONSTRAINT `fk_adoptedcats_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
--- Constraints for table `adoption_form`
---
-ALTER TABLE `adoption_form`
-  ADD CONSTRAINT `fk_adoption_avcats` FOREIGN KEY (`cat_id`) REFERENCES `available_cats` (`cat_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  ADD CONSTRAINT `fk_adoption_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
 -- Constraints for table `Contact_form`
 --
 ALTER TABLE `Contact_form`
   ADD CONSTRAINT `fk_contact_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
--- Constraints for table `shopping_cart`
---
-ALTER TABLE `shopping_cart`
-  ADD CONSTRAINT `fk_cart_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  ADD CONSTRAINT `fk_cart_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
