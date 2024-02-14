@@ -5,9 +5,9 @@ $password = "M3Ee1Z4m";
 $database = "wp_viktor23001"; 
 
 
-$connection = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
 
-if ($connection->connect_error) {
-    die("Connection failed: " . $connection->connect_error);
+if ($conn->conn_error) {
+    die("Connection failed: " . $conn->conn_error);
 }
 ?>

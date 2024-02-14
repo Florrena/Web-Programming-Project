@@ -78,11 +78,6 @@
     padding-left: 4px;
 }
 
-.header-container .shopping-icon img {
-    max-width: 32%;
-    height: auto;
-    padding-right: 3px;
-}
 
 
 /* Body */
@@ -352,6 +347,12 @@ article{
     background-color: #30333A;
     color: #ECA390;
 }
+
+.card form.add-to-cart {
+    display: flex;
+    justify-content: center; 
+}
+
 
 
 
