@@ -43,17 +43,19 @@ include 'header.php'; ?>
                     
                     Remember, at Cat Cuddles & Whisker Wonders, we take silly cat business very seriously. Come on down, adopt a cat, and let the purr-festivities begin! Meow is the time to make your home a whisker-friendly wonderland!</p>
                 </div>     
+
+                <div class="randomcat2">
+                    <h1> Find a Loving Home for Your Furry Friend! </h1>
+                    <div class="grid-container">
+                    <p>We understand that life can throw unexpected challenges our way, and sometimes, caring for our beloved feline friends becomes overwhelming. But fret not! At Purrfect Haven Adoption Agency, we're here to lend a helping paw. Click the 'Adoption' button to begin the process of providing a new, loving home for your kitty.</p>
+                    <a href="adoptout_cat.php"><button class="show-cat-button">
+                    Adopt out
+                    <img src="images/paw.webp" alt="Cat Icon">
+                    </button></a>
+                </div>
+            </div>
     </div>
-    <div class="randomcat">
-        <h1> Find a Loving Home for Your Furry Friend! </h1>
-         <div class="grid-container">
-            <p>We understand that life can throw unexpected challenges our way, and sometimes, caring for our beloved feline friends becomes overwhelming. But fret not! At Purrfect Haven Adoption Agency, we're here to lend a helping paw. Click the 'Adoption' button to begin the process of providing a new, loving home for your kitty.</p>
-            <a href="adoptout_cat.php"><button class="show-cat-button">
-                Adopt out
-                <img src="images/paw.webp" alt="Cat Icon">
-            </button></a>
-        </div>
-</div>
+
 <script src="randomcatbutton.js"></script>
 
 <?php include 'footer.php'; ?>
