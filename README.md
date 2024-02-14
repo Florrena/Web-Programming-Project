@@ -32,9 +32,10 @@ In this section, list and describe the features or functionality that you are wo
 - [✓] Feature 3 (Ania): give up cat for adoption page.
 - [✓] Feature 4 (Janika): contact form.
 - [✓] Feature 5 (Walid): adoption form.
-- [ ] Feature 6 (Not started yet): slide home banners.
-- [ ] Feature 7 (Not started yet): search button.
+- [ ] Feature 6 (Viktor): slide home banners.
+- [✓] Feature 7 (Ania): random cat button.
 - [✓] Feature 8 (Janika): slide out menu for mobile/normal page.
+- [✓] Feature 9 (Walid): JavaScript form validation.
 
 > Add features as required. 
 ### Feature 1
@@ -63,12 +64,15 @@ We will program banners on the home page to change every specified number of sec
 
 ### Feature 7
 
-We will make the search button interactive and working, and also make it slide out once a customer clicks on it.
+We will make the random cat button generate a perfect cat for a customer.
 
 ### Feature 8
 
 We will make a slide out menu in our header. The concept is to make it look more mobile user-friendly.
 
+### Feature 9
+
+We will make a validation for all of our forms, so the user can fill them up in the correct way.
 
 
 ---
@@ -77,16 +81,17 @@ We will make a slide out menu in our header. The concept is to make it look more
 
 List the database tables that are part of your project. 
 
-- Table 1 (Ania): user table
-- Table 2-3 (Ania): Cat table Adopted/Available
-- Table 4 (Ania): Adopt-out-form table
-- Table 5 (Walid): adoption-form table
-- Table 6 (Viktor): Products InStock/Bought
-- Table 7 (Janika): Contact-form table 
+- Table 1 (Ania): users table
+- Table 2 (Ania): Cat table Available
+- Table 3 (Ania): Adopt-out-form table
+- Table 4 (Walid): adoption-form table
+- Table 5 (Viktor): Orders
+- Table 6 (Janika): Contact-form table 
 
 
 > Include the ER Diagram of the database.
-![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/3be4e7d2-b34c-4e41-8d8d-1102f10c1936)
+![image](https://github.com/Florrena/Web-Programming-Project/assets/79853717/57a2dcb3-e749-41b0-b5d2-f3ea7dab6c7b)
+
 
 
 ---
