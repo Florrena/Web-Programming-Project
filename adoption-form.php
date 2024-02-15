@@ -23,23 +23,31 @@ if (isset($_POST['submit'])) {
     $comments = $_POST['comments'];
     $cat_id = $_POST['cat_id']; // Retrieve the cat_id from the form data
 
-    $insertQuery = "INSERT INTO adoption_form (cat_id, fname, user_email, phone, address, age, occupation, experience, house_type, reasons, comments)
-                    VALUES ('$cat_id', '$fname', '$user_email', '$phone', '$address', '$age', '$occupation', '$experience', '$house_type', '$reasons', '$comments')";
 
-    if (mysqli_query($conn, $insertQuery)) {
-        // Delete data from available_cats table
-        $deleteQuery = "DELETE FROM available_cats WHERE cat_id = '$cat_id'";
-        if (mysqli_query($conn, $deleteQuery)) {
-            $conn->commit();
-            $message = "Thank you for submitting the form. We will contact you shortly.";
-        } else {
-            $conn->rollback();
-            $message = "Error deleting from available_cats: " . mysqli_error($conn);
-        }
+$insertQuery = $conn->prepare("INSERT INTO adoption_form (cat_id, fname, user_email, phone, address, age, occupation, experience, house_type, reasons, comments) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+
+$insertQuery->bind_param("sssssssssss", $cat_id, $fname, $user_email, $phone, $address, $age, $occupation, $experience, $house_type, $reasons, $comments);
+
+
+if ($insertQuery->execute()) {
+    // Delete data from available_cats table
+    $deleteQuery = "DELETE FROM available_cats WHERE cat_id = '$cat_id'";
+    if (mysqli_query($conn, $deleteQuery)) {
+        $conn->commit();
+        $message = "Thank you for submitting the form. We will contact you shortly.";
     } else {
         $conn->rollback();
-        $message = "Error inserting into adoption_form: " . mysqli_error($conn);
+        $message = "Error deleting from available_cats: " . mysqli_error($conn);
     }
+} else {
+    $conn->rollback();
+    $message = "Error inserting into adoption_form: " . $insertQuery->error;
+}
+
+
+$insertQuery->close();
+
 
 echo $message;
 }
