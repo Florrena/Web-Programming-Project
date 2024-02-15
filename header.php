@@ -46,7 +46,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     <li <?php if ($currentPage == 'login.php') echo 'class="current"'; ?>>
                     <a href="login.php">LOG IN</a>
                     </li>
-                    <div class="search-icon"><li><a href="#"><img src="images/search_.png"></a></li></div>
+                    <div class="search-icon"><li><a href="shopping-cart.php"><img src="images/shopping-cart.png"></a></li></div>
                 </ul>
             </div>
         </li>

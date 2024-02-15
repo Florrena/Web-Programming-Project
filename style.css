@@ -42,6 +42,11 @@
   }
 
 /* Header */
+.header-container {
+    margin: 0;
+    padding: 0;
+}
+
 
 /*NAV BAR hamburger START*/
 
@@ -599,6 +604,57 @@ article{
     color: #ECA390;
 }
 
+.card form.add-to-cart {
+    display: flex;
+    justify-content: center; 
+}
+
+.cart-container table {
+    padding-left: 10%;
+    width: 90%;
+}
+
+.cart-container table th,
+.cart-container table td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-family: 'Lato','sans-serif';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.cart-container h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lato','sans-serif';
+    font-weight: bolder;
+}
+
+.cart-container td {
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.cart-container th {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.cart-container table button [type="submit"] {
+    float: left;
+}
+
+.cart-container table input[type="number"] {
+    width: 35px;
+    height: 40px;
+    float: left;
+    font-family: 'Lato','sans-serif';
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+
 
 
 /* About cat section */
@@ -623,6 +679,8 @@ article{
     display: grid;
     place-items: center;
     margin: 0;
+    padding-left: 75px;
+    padding-top: 10px;
 }
 
 .adopt-cat-button{
@@ -781,8 +839,25 @@ textarea[type="inquiry"]{
     padding-left: 5px;
 }
 
+input[type="phonenumber"],
+input[type="inquiry"]{
+    margin-bottom: 10px;
+    background-color:#8a8989;
+    border-radius:15px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+input[type="inquiry"]{
+    display: flex;
+    padding-bottom: 50px;
+}
+
 button{
     max-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     background-color: #30333A;
     color: #fff; 
     padding: 10px 20px; 
