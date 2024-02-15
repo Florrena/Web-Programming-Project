@@ -5,7 +5,7 @@ session_start();
 
 ?>
 
-<div class="cat-header">
+<div class="cat-cart">
     <img src="images/paw.webp">
     <h1>Meow that's what I call a great order! Your feline friend will be 'feline' fine in no time!</h1>
     <img src="images/paw.webp">
