@@ -49,7 +49,7 @@ INSERT INTO `available_cats` (`cat_id`, `cat_name`, `adoption_status`, `owner`) 
 (1, 'Bunker Buster', 'Available', 'Silicate'),
 (2, 'Tole Tole', 'Available', 'Silicate'),
 (3, 'Jägermeister', 'Available', 'Silicate'),
-(4, 'Herbert', 'Available', 'Silicate'),
+(4, 'Herbert', 'Available', 'Silicate');
 
 --
 
@@ -95,10 +95,10 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `users` (`user_id`, `fname`, `user_email`, `user_password`) VALUES
-(7, 'asd', 'anna@gmail.com', 'sad'),
-(9, 'sahil', 'sahil@gmail.com', 'poop'),
-(14, 'Janika', 'janika@gmail.com', 'nomnom'),
-(15, 'Viktor', 'viktor@gmail.com', 'aaaa'),
+(1, 'asd', 'anna@gmail.com', 'sad'),
+(2, 'sahil', 'sahil@gmail.com', 'poop'),
+(3, 'Janika', 'janika@gmail.com', 'nomnom'),
+(4, 'Viktor', 'viktor@gmail.com', 'aaaa');
 
 --
 
