@@ -84,3 +84,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var passwordField = document.getElementById("password");
+    var confirmPasswordField = document.getElementById("confirm_password");
+    var confirmPasswordError = document.getElementById("confirmPasswordError");
+
+    function validatePassword() {
+        if (passwordField.value !== confirmPasswordField.value) {
+            confirmPasswordError.textContent = "Passwords do not match";
+        } else {
+            confirmPasswordError.textContent = "";
+        }
+    }
+
+    passwordField.addEventListener("input", validatePassword);
+    confirmPasswordField.addEventListener("input", validatePassword);
+});

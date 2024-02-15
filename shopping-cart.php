@@ -68,10 +68,12 @@ session_start();
                 <input type="text" class="input-field" id="fname" name="fname" placeholder="Full Name" required>
             </div>
             <div class="input-box">
-                <input type="text" class="input-field" id="email" name="email" placeholder="Email" required>
+                <input type="text" class="input-field" id="email" name="email" placeholder="Email" required><br>
+                <span id="emailError" class="error"></span>
             </div>
             <div class="input-box">
-                <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required>
+                <input type="tel" class="input-field" id="phone" name="phone" placeholder="Phone" required><br>
+                <span id="phoneError" class="error"></span>
             </div>
             <div class="input-box">
                 <textarea class="input-field" id="address" name="address" rows="4" placeholder="Delivery Address" required></textarea>
@@ -97,12 +99,12 @@ session_start();
                 <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" required>
             </div>
             <div class="input-submit">
-                <button class="submit-btn" type="submitcheckout" name="submitcheckout">Proceed to checkout</button>
+                <button class="submit-btn" type="submitcheckout" name="submitcheckout">Checkout</button>
             </div>
         </form>
     </div>
 </div>
-
+<script src="validation.js"></script>
 <?php
 include("footer.php");
 ?>

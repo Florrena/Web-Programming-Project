@@ -20,7 +20,7 @@ include ("header.php");
                     <a href="home.php"><button class="show-cat-button">
                         Return to home page
                         <img src="images/paw.webp" alt="Cat Icon">
-                        </button></a>
+                        </button></a><br><br><br>
                 </div>
         </div>
 

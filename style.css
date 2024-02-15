@@ -827,7 +827,7 @@ form {
 }
 
 input[type="name"],
-input[type="email"],
+input[type="cemail"],
 input[type="tel"]{
     background-position: right center;
     margin-bottom: 10px;

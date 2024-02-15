@@ -54,6 +54,10 @@ if (isset($_POST['submit'])) {
                     <input type="password" id="password" name="user_password" class="input-field" placeholder="Password" autocomplete="off" required>
                     <span id="passwordError" class="error"></span>
                 </div>
+                <div class="input-box">
+                    <input type="password" id="confirm_password" name="confirm_password" class="input-field" placeholder="Confirm Password" autocomplete="off" required>
+                    <span id="confirmPasswordError" class="error"></span>
+                </div>
                 <div class="input-submit">
                     <button type="submit" class="submit-btn" name="submit">SIGN UP</button>
                 </div>

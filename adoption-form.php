@@ -23,7 +23,6 @@ if (isset($_POST['submit'])) {
     $comments = $_POST['comments'];
     $cat_id = $_POST['cat_id']; // Retrieve the cat_id from the form data
 
-   
     $conn->autocommit(FALSE); 
     $sql1 = "INSERT INTO adoption_form (cat_id, fname, user_email, phone, address, age, occupation, experience, house_type, reasons, comments)
             VALUES ('$cat_id', '$fname', '$user_email', '$phone', '$address', '$age', '$occupation', '$experience', '$house_type', '$reasons', '$comments')";
@@ -35,12 +34,12 @@ if (isset($_POST['submit'])) {
         $message= "Thank you for submitting the form. We will contact you shortly.";
     } else {
         $conn->rollback();  
-        $message= "Error: " . $sql . "<br>" . $conn->error;
+        $message= "Error: " . $sql1 . "<br>" . $conn->error;
     }
     $conn->close();
-    
 }
 ?>
+
 
 <div class="cat-header">
     <img src="images/paw.webp">

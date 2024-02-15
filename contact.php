@@ -33,7 +33,7 @@ include 'header.php'; ?>
             </div>
             <div>
                 <label>E-mail:</label><br>
-                <input type="email" id="email" name="email"  required>
+                <input type="cemail" id="email" name="email"  required>
                 <span id="emailError" class="error"></span>
             </div>
             <div>
