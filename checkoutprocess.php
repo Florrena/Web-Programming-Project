@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['submit'])) {
-    include 'config.php';
+    include 'db.php';
     if ($conn) {
         $fullName = $_POST['fname'];
         $email = $_POST['email'];

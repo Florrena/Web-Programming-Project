@@ -1,4 +1,5 @@
 <?php
+$title = 'Thank you!';
 include ("header.php");
 
 ?>

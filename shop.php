@@ -1,7 +1,7 @@
 <?php
 $title = 'Shop';
 include ("header.php");
-include ("config.php");
+include ("db.php");
 
 $sql = "SELECT * FROM products";
 $result = $conn->query($sql);   
