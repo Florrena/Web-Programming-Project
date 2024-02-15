@@ -32,7 +32,7 @@ In this section, list and describe the features or functionality that you are wo
 - [✓] Feature 3 (Ania): give up cat for adoption page.
 - [✓] Feature 4 (Janika): contact form.
 - [✓] Feature 5 (Walid): adoption form.
-- [ ] Feature 6 (Viktor): slide home banners.
+- [✓] Feature 6 (Viktor): slide home banners.
 - [✓] Feature 7 (Ania): random cat button.
 - [✓] Feature 8 (Janika): slide out menu for mobile/normal page.
 - [✓] Feature 9 (Walid): JavaScript form validation.
@@ -85,7 +85,7 @@ List the database tables that are part of your project.
 - Table 2 (Ania): Cat table Available
 - Table 3 (Ania): Adopt-out-form table
 - Table 4 (Walid): adoption-form table
-- Table 5-6 (Viktor): Orders/Products
+- Table 5-6 (Viktor): Orders and Products table
 - Table 7 (Janika): Contact-form table 
 
 
