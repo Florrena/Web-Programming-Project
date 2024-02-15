@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
                     <textarea id="additionalComments" name="additionalComments" class="input-field" rows="4"></textarea>
                 </div>
                 <div class="input-submit">
-                    <button type="submit" class="submit-btn" name="submit">SUMBIT</button>
+                    <button type="submit" class="submit-btn" name="submit">SUBMIT</button>
                 </div><br>
                 <div class="message">
                 <?php echo $message; ?>
