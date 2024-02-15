@@ -97,7 +97,7 @@ session_start();
                 <input type="text" class="input-field" id="CVV" name="CVV" placeholder="CVV" required>
             </div>
             <div class="input-submit">
-                <button class="submit-btn" type="submit" name="submit">Proceed to checkout</button>
+                <button class="submit-btn" type="submitcheckout" name="submitcheckout">Proceed to checkout</button>
             </div>
         </form>
     </div>

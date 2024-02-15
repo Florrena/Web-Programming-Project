@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submitcheckout'])) {
     include 'db.php';
     if ($conn) {
         $fullName = $_POST['fname'];

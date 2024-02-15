@@ -37,7 +37,6 @@ In this section, list and describe the features or functionality that you are wo
 - [✓] Feature 8 (Janika): slide out menu for mobile/normal page.
 - [✓] Feature 9 (Walid): JavaScript form validation.
 
-> Add features as required. 
 ### Feature 1
 
 We will make the basket button that takes you to the shopping cart and payment page, we will design the payment page. The products as well as customers will be added to the database.
