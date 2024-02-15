@@ -35,7 +35,7 @@ $result = $conn->query($sql);
                     </form>
                     </div>
                 <?php }
-            } 
+            }
             ?>
         </div>
     </div>

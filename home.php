@@ -7,9 +7,23 @@ include ("header.php");
     <div class="body-container">
 
 <!-- Banner -->
-    <div class="home-banner-container">
-        <img src="images/home-banner.png" alt="banner" draggable="false">
+<div class="home-banner-container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/home-banner.png" alt="banner" draggable="false">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/home-banner2.jpg" alt="banner2" draggable="false">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/home-banner3.jpeg" alt="banner3" draggable="false">
+        </div>
     </div>
+    <br>
+</div>
+        <br>
 
 <!-- Random cat button -->
         <div class="randomcat">
@@ -49,3 +63,5 @@ include ("header.php");
 include ("footer.php");
 
 ?>
+
+<script src = "banner.js"></script>

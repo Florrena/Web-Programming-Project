@@ -21,6 +21,7 @@ session_start();
                 <th>Total</th>
             </tr>
             <?php
+            
             $totalPrice = 0;
 
             if(isset($_SESSION['cart'])) {
