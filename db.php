@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; 
-$username = "bbcap23_1";
-$password = "iX8vxgiX";
-$dbname = "wp_bbcap23_1";
+$servername = ""; 
+$username = "";
+$password = "";
+$dbname = "";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
