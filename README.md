@@ -27,15 +27,15 @@ We created a cat adoption website, where you can adopt cute cats, put a cat up f
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [✓] Feature 1 (Viktor): [Payment page](http://shell.hamk.fi/~viktor23001/Web-Programming-Project/shopping-cart.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/shopping-cart.php)
-- [✓] Feature 2 (Ania): [Log in/sign up page](http://shell.hamk.fi/~anna23021/ProjectWork/signup.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/signup.php)
-- [✓] Feature 3 (Ania): [Adopt out form](http://shell.hamk.fi/~anna23021/ProjectWork/signup.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/checkoutprocess.php)
-- [✓] Feature 4 (Janika): [Contact form](http://shell.hamk.fi/~janika23001/Project/contact.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/contact.php)
-- [✓] Feature 5 (Walid): [Adoption form](http://shell.hamk.fi/~walid23000/wm-php-tasks/Web-Programming-Project/adoption-form.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/adoption-form.php)
-- [✓] Feature 6 (Viktor): [Slide home banners](http://shell.hamk.fi/~viktor23001/Web-Programming-Project/home.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/banner.js)
-- [✓] Feature 7 (Ania): [Random cat button](http://shell.hamk.fi/~anna23021/ProjectWork/home.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/randomcatbutton.js)
-- [✓] Feature 8 (Janika): [Hamburger menu for mobile page](http://shell.hamk.fi/~janika23001/Project/home.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/app.js)
-- [✓] Feature 9 (Walid): [JavaScript form validation](http://shell.hamk.fi/~walid23000/wm-php-tasks/Web-Programming-Project/adoption-form.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/validation.js)
+- [✓] Feature 1 (Viktor): [Payment page(shell)](http://shell.hamk.fi/~viktor23001/Web-Programming-Project/shopping-cart.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/shopping-cart.php)
+- [✓] Feature 2 (Ania): [Log in/sign up page(shell)](http://shell.hamk.fi/~anna23021/ProjectWork/signup.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/signup.php)
+- [✓] Feature 3 (Ania): [Adopt out form(shell)](http://shell.hamk.fi/~anna23021/ProjectWork/signup.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/checkoutprocess.php)
+- [✓] Feature 4 (Janika): [Contact form(shell)](http://shell.hamk.fi/~janika23001/Project/contact.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/contact.php)
+- [✓] Feature 5 (Walid): [Adoption form(shell)](http://shell.hamk.fi/~walid23000/wm-php-tasks/Web-Programming-Project/adoption-form.php) [Github](https://github.com/Florrena/Web-Programming-Project/blob/main/adoption-form.php)
+- [✓] Feature 6 (Viktor): [Slide home banners(shell)](http://shell.hamk.fi/~viktor23001/Web-Programming-Project/home.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/banner.js)
+- [✓] Feature 7 (Ania): [Random cat button(shell)](http://shell.hamk.fi/~anna23021/ProjectWork/home.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/randomcatbutton.js)
+- [✓] Feature 8 (Janika): [Hamburger menu for mobile page(shell)](http://shell.hamk.fi/~janika23001/Project/home.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/app.js)
+- [✓] Feature 9 (Walid): [JavaScript form validation(shell)](http://shell.hamk.fi/~walid23000/wm-php-tasks/Web-Programming-Project/adoption-form.php) Github [Link](https://github.com/Florrena/Web-Programming-Project/blob/main/validation.js)
 
 
 ### Feature 1
