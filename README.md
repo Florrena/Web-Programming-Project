@@ -124,11 +124,11 @@ The customer is able to ask quesions or give suggestions/opinions to the Silicat
 
 List any tables that you have created in the project work
 
-- Table 1 (Ania)  [Available cats]: https://github.com/Florrena/Web-Programming-Project/blob/main/available_cats.php
-- Table 2 (Viktor) [Shopping Cart]: https://github.com/Florrena/Web-Programming-Project/blob/main/shopping-cart.php
-- Table 3 (Walid) [Adoption form]: https://github.com/Florrena/Web-Programming-Project/blob/main/adoption-form.php
-- Table 4 (Janika) [Contact form]: https://github.com/Florrena/Web-Programming-Project/blob/main/contact.php
+- Table 1 (Ania)  Available cats: https://github.com/Florrena/Web-Programming-Project/blob/main/available_cats.php#LAvailable cats
+- Table 2 (Viktor) Shopping Cart: https://github.com/Florrena/Web-Programming-Project/blob/main/shopping-cart.php#LShopping cart
+- Table 3 (Walid) Adoption form: https://github.com/Florrena/Web-Programming-Project/blob/main/adoption-form.php#Adoption form
+- Table 4 (Janika) Contact form: https://github.com/Florrena/Web-Programming-Project/blob/main/contact.php#Contact form
 
-[Database SQL]: https://github.com/Florrena/Web-Programming-Project/blob/main/database.md
+Database SQL: https://github.com/Florrena/Web-Programming-Project/blob/main/database.md
 
 ---
